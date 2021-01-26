@@ -4,4 +4,4 @@
 
 本章将介绍以下章节：
 
-*   [第 13 章](../Text/13.html)和*使用 Python 和 OpenCV 的移动和 Web 计算机视觉*
+*   第 13 章，*使用 Python 和 OpenCV 的移动和 Web 计算机视觉*
