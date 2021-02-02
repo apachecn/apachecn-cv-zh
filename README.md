@@ -8,6 +8,14 @@
 * [在线阅读（Gitee）](https://apachecn.gitee.io/apachecn-cv-zh/)
 * [ApacheCN 学习资源](http://docs.apachecn.org/)
 
+## 目录
+
++   [OpenCV3 和 Qt5 计算机视觉](docs/cv-opencv3-qt5/SUMMARY.md)
++   [精通 Python OpenCV4](docs/master-opencv4-py/SUMMARY.md)
++   [Python OpenCV3 计算机视觉秘籍](docs/opencv3-cv-py-cb/SUMMARY.md)
++   [Python OpenCV 3.x 示例](docs/opencv-3x-py-example/SUMMARY.md)
++   [Qt5 和 OpenCV4 计算机视觉项目](docs/qt5-opencv4-cv-proj/SUMMARY.md)
+
 ## 贡献指南
 
 本项目需要校对，欢迎大家提交 Pull Request。
