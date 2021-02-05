@@ -11,7 +11,7 @@
 假设我们已经根据第 1 章和*设置 OpenCV* 中描述的方法之一设置了 Python。 根据我们现有的设置，我们可以通过以下方式之一安装 Pygame：
 
 *   带有 32 位 Python 的 Windows：从[下载并 安装 Pygame 1.9.1 http://pygame.org/ftp/pygame-1.9.1.win32-py2.7.msi](http://pygame.org/ftp/pygame-1.9.1.win32-py2.7.msi) 。
-*   带有 64 位 Python 的 Windows：从 [http://www.lfd.uci.edu/~gohlke/pythonlibs/2k2kdosm/pygame-1.9.2pre 下载并安装 Pygame 1.9.2 预览版。 win-amd64-py2.7.exe](http://www.lfd.uci.edu/~gohlke/pythonlibs/2k2kdosm/pygame-1.9.2pre.win-amd64-py2.7.exe) 。
+*   带有 64 位 Python 的 Windows：从[这个页面](http://www.lfd.uci.edu/~gohlke/pythonlibs/2k2kdosm/pygame-1.9.2pre.win-amd64-py2.7.exe)。
 *   带有 Macports 的 Mac：打开**终端**并运行以下命令：
 
     ```py
