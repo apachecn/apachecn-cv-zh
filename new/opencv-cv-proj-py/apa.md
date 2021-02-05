@@ -8,7 +8,7 @@
 
 # 安装 Pygame
 
-假设我们已经根据[第 1 章](01.html "Chapter 1. Setting up OpenCV")和*设置 OpenCV* 中描述的方法之一设置了 Python。 根据我们现有的设置，我们可以通过以下方式之一安装 Pygame：
+假设我们已经根据第 1 章和*设置 OpenCV* 中描述的方法之一设置了 Python。 根据我们现有的设置，我们可以通过以下方式之一安装 Pygame：
 
 *   带有 32 位 Python 的 Windows：从[下载并 安装 Pygame 1.9.1 http://pygame.org/ftp/pygame-1.9.1.win32-py2.7.msi](http://pygame.org/ftp/pygame-1.9.1.win32-py2.7.msi) 。
 *   带有 64 位 Python 的 Windows：从 [http://www.lfd.uci.edu/~gohlke/pythonlibs/2k2kdosm/pygame-1.9.2pre 下载并安装 Pygame 1.9.2 预览版。 win-amd64-py2.7.exe](http://www.lfd.uci.edu/~gohlke/pythonlibs/2k2kdosm/pygame-1.9.2pre.win-amd64-py2.7.exe) 。
@@ -47,9 +47,9 @@ Al Sweigart 的*使用 Python 和 Pygame 制作游戏*是一本烹饪手册，�
 
 # 子类管理器。
 
-如[第 2 章](02.html "Chapter 2. Handling Files, Cameras, and GUIs")，*处理相机，文件和 GUI* 中所述，我们的面向对象设计使我们可以轻松地将 OpenCV 的 HighGUI 窗口管理器替换为另一个窗口管理器，例如 Pygame 。 为此，我们只需要将`managers.WindowManager`类 子类化，并覆盖四种方法：`createWindow()`，`show()`，`destroyWindow()`和`processEvents()`。 另外，我们需要导入一些新的依赖项。
+如第 2 章，*处理相机，文件和 GUI* 中所述，我们的面向对象设计使我们可以轻松地将 OpenCV 的 HighGUI 窗口管理器替换为另一个窗口管理器，例如 Pygame 。 为此，我们只需要将`managers.WindowManager`类 子类化，并覆盖四种方法：`createWindow()`，`show()`，`destroyWindow()`和`processEvents()`。 另外，我们需要导入一些新的依赖项。
 
-要继续，我们需要[第 2 章](02.html "Chapter 2. Handling Files, Cameras, and GUIs")，*处理摄像机，文件和 GUI 的`managers.py`文件和[第 4 章](04.html "Chapter 4. Tracking Faces with Haar Cascades")的`utils.py`文件，*使用 Haar 级联*跟踪人脸。 从`utils.py`中，我们只需要一个函数 `isGray()`，我们在[第 4 章](04.html "Chapter 4. Tracking Faces with Haar Cascades")和*用 Haar 级联*跟踪人脸时实现了该功能。 让我们编辑`managers.py`以添加以下导入：*
+要继续，我们需要第 2 章，*处理摄像机，文件和 GUI 的`managers.py`文件和第 4 章的`utils.py`文件，*使用 Haar 级联*跟踪人脸。 从`utils.py`中，我们只需要一个函数 `isGray()`，我们在第 4 章和*用 Haar 级联*跟踪人脸时实现了该功能。 让我们编辑`managers.py`以添加以下导入：*
 
 ```py
 import pygame

@@ -1,6 +1,6 @@
 # 附录 B.为自定义目标生成 Haar 级联
 
-该附录显示了如何生成 Haar 级联 XML 文件，例如[第 4 章](04.html "Chapter 4. Tracking Faces with Haar Cascades")和*使用 Haar 级联*跟踪人脸时所使用的 XML 文件。 通过生成自己的级联文件，我们可以潜在地跟踪任何模式或对象，而不仅仅是面部。 但是，好的结果可能不会很快出现。 我们必须仔细收集图像，配置脚本参数，执行实际测试并进行迭代。 可能涉及大量的人工时间和处理时间。
+该附录显示了如何生成 Haar 级联 XML 文件，例如第 4 章和*使用 Haar 级联*跟踪人脸时所使用的 XML 文件。 通过生成自己的级联文件，我们可以潜在地跟踪任何模式或对象，而不仅仅是面部。 但是，好的结果可能不会很快出现。 我们必须仔细收集图像，配置脚本参数，执行实际测试并进行迭代。 可能涉及大量的人工时间和处理时间。
 
 # 收集正面和负面的训练图像
 
@@ -20,16 +20,16 @@
 
 ## 在 Windows 上
 
-Windows 上的两个可执行文件称为`ONopencv_createsamples.exe`和`ONopencv_traincascade.exe`。 它们不是预建的。 而是，仅当您从源代码编译 OpenCV 时，它们才存在。 根据您在[第 1 章](01.html "Chapter 1. Setting up OpenCV")和*设置 OpenCV* 中选择的编译方法，它们的父文件夹是以下文件夹之一：
+Windows 上的两个可执行文件称为`ONopencv_createsamples.exe`和`ONopencv_traincascade.exe`。 它们不是预建的。 而是，仅当您从源代码编译 OpenCV 时，它们才存在。 根据您在第 1 章和*设置 OpenCV* 中选择的编译方法，它们的父文件夹是以下文件夹之一：
 
 *   MinGW：`<unzip_destination>\bin`
 *   Visual Studio 或 Visual C ++ Express：`<unzip_destination>\bin\Release`
 
-如果要将可执行文件的文件夹添加到系统的`Path`变量中，请参考*信息框中的说明，在 Windows XP，Windows Vista，Windows 7 和 Windows 8* 上进行选择 [第 1 章](01.html "Chapter 1. Setting up OpenCV")和*的部分设置 OpenCV* 。 否则，请注意可执行文件的完整路径，因为我们将需要在运行它们时使用它。
+如果要将可执行文件的文件夹添加到系统的`Path`变量中，请参考*信息框中的说明，在 Windows XP，Windows Vista，Windows 7 和 Windows 8* 上进行选择 第 1 章和*的部分设置 OpenCV* 。 否则，请注意可执行文件的完整路径，因为我们将需要在运行它们时使用它。
 
 ## 在 Mac，Ubuntu 和其他类似 Unix 的系统上
 
-Mac 上的两个可执行文件 Ubuntu 和其他类似 Unix 的系统称为`opencv_createsamples`和`opencv_traincascade`。 它们的父文件夹是以下文件夹之一，具体取决于您的系统和在[第 1 章](01.html "Chapter 1. Setting up OpenCV")，*设置 OpenCV* 中选择的方法：
+Mac 上的两个可执行文件 Ubuntu 和其他类似 Unix 的系统称为`opencv_createsamples`和`opencv_traincascade`。 它们的父文件夹是以下文件夹之一，具体取决于您的系统和在第 1 章，*设置 OpenCV* 中选择的方法：
 
 *   带有 MacPorts 的 Mac：`/opt/local/bin`
 *   带有 Homebrew 的 Mac：`/opt/local/bin`或`/opt/local/sbin`
@@ -141,7 +141,7 @@ $ <opencv_traincascade> -data <cascade> -vec <binary_description> -bg <negative_
 
 # 测试和改进<级联>
 
-`<cascade>`是与 OpenCV 的`CascadeClassifier`类的构造函数兼容的 XML 文件。 对于 如何使用`CascadeClassifier`的示例，请参考[第 4 章](04.html "Chapter 4. Tracking Faces with Haar Cascades")和*用 Haar 级联码*跟踪人脸的`FaceTracker`实现。 。 通过复制和修改`FaceTracker`和`Cameo`，您应该能够创建一个简单的测试应用程序，该应用程序在自定义目标的跟踪实例周围绘制矩形。
+`<cascade>`是与 OpenCV 的`CascadeClassifier`类的构造函数兼容的 XML 文件。 对于 如何使用`CascadeClassifier`的示例，请参考第 4 章和*用 Haar 级联码*跟踪人脸的`FaceTracker`实现。 。 通过复制和修改`FaceTracker`和`Cameo`，您应该能够创建一个简单的测试应用程序，该应用程序在自定义目标的跟踪实例周围绘制矩形。
 
 也许在您第一次尝试级联训练时，您将不会获得可靠的跟踪结果。 要提高培训效果，请执行以下操作：
 
