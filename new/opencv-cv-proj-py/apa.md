@@ -49,7 +49,7 @@ Al Sweigart 的*使用 Python 和 Pygame 制作游戏*是一本烹饪手册，�
 
 如第 2 章，*处理相机，文件和 GUI* 中所述，我们的面向对象设计使我们可以轻松地将 OpenCV 的 HighGUI 窗口管理器替换为另一个窗口管理器，例如 Pygame 。 为此，我们只需要将`managers.WindowManager`类 子类化，并覆盖四种方法：`createWindow()`，`show()`，`destroyWindow()`和`processEvents()`。 另外，我们需要导入一些新的依赖项。
 
-要继续，我们需要第 2 章，*处理摄像机，文件和 GUI 的`managers.py`文件和第 4 章的`utils.py`文件，*使用 Haar 级联*跟踪人脸。 从`utils.py`中，我们只需要一个函数 `isGray()`，我们在第 4 章和*用 Haar 级联*跟踪人脸时实现了该功能。 让我们编辑`managers.py`以添加以下导入：*
+要继续，我们需要第 2 章，*处理摄像机，文件和 GUI 的`managers.py`文件和第 4 章的`utils.py`文件，*使用 Haar 级联*跟踪人脸。 从`utils.py`中，我们只需要一个函数`isGray()`，我们在第 4 章和*用 Haar 级联*跟踪人脸时实现了该功能。 让我们编辑`managers.py`以添加以下导入：*
 
 ```py
 import pygame
@@ -96,9 +96,9 @@ class PygameWindowManager(WindowManager):
 
 请注意，我们正在使用两个 Pygame 模块：`pygame.display`和`pygame.event`。
 
-通过调用`pygame.display.init()`创建窗口，并通过调用`pygame.display.quit()`销毁窗口。 重复调用`display.init()`不起作用，因为 Pygame 仅适用于单窗口应用程序。 Pygame 窗口具有`pygame.Surface`类型的绘图表面。 要获得对此`Surface`的引用，我们可以调用`pygame.display.get_surface()`或 `pygame.display.set_mode()`。 后一个函数在返回`Surface`实体的属性之前对其进行修改。 `Surface`实体具有`blit()`方法，即，该方法将另一个`Surface`和一个坐标对作为参数，其中后一个`Surface`应该被“涂抹”（绘制）到第一个坐标上。 完成当前帧的窗口`Surface`的更新后，我们应调用`pygame.display.flip()`来显示它。
+通过调用`pygame.display.init()`创建窗口，并通过调用`pygame.display.quit()`销毁窗口。 重复调用`display.init()`不起作用，因为 Pygame 仅适用于单窗口应用程序。 Pygame 窗口具有`pygame.Surface`类型的绘图表面。 要获得对此`Surface`的引用，我们可以调用`pygame.display.get_surface()`或`pygame.display.set_mode()`。 后一个函数在返回`Surface`实体的属性之前对其进行修改。 `Surface`实体具有`blit()`方法，即，该方法将另一个`Surface`和一个坐标对作为参数，其中后一个`Surface`应该被“涂抹”（绘制）到第一个坐标上。 完成当前帧的窗口`Surface`的更新后，我们应调用`pygame.display.flip()`来显示它。
 
-通过调用 `pygame.event.get()`来轮询诸如`keypresses`之类的事件，该事件将返回自上次调用以来发生的所有事件的列表。 每个事件的类型均为`pygame.event.Event`，并具有`type`属性，该属性指示事件的类别，例如，单击的`pygame.KEYDOWN`和单击窗口的**关闭** 按钮的`pygame.QUIT` 。 根据`type`的值，`Event`实体可能具有其他属性，例如`KEYDOWN` 事件的`key`（ASCII 密钥代码）。
+通过调用`pygame.event.get()`来轮询诸如`keypresses`之类的事件，该事件将返回自上次调用以来发生的所有事件的列表。 每个事件的类型均为`pygame.event.Event`，并具有`type`属性，该属性指示事件的类别，例如，单击的`pygame.KEYDOWN`和单击窗口的**关闭** 按钮的`pygame.QUIT` 。 根据`type`的值，`Event`实体可能具有其他属性，例如`KEYDOWN` 事件的`key`（ASCII 密钥代码）。
 
 相对于 使用 HighGUI 的基础`WindowManager`，`PygameWindowManager`通过在每帧 OpenCV 的图像格式和 Pygame 的`Surface`格式之间进行转换会产生一些间接费用。 但是，`PygameWindowManager`提供正常的窗口关闭行为，而基本的`WindowManager`不提供。
 
