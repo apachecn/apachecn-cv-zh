@@ -41,9 +41,9 @@
 
 # 文档和教程
 
-Pygame 的 API 文档和一些教程可以在 [http://www.pygame.org/docs/](http://www.pygame.org/docs/) 上在线找到。
+Pygame 的 API 文档和一些教程可以在[这个页面](http://www.pygame.org/docs/)上在线找到。
 
-Al Sweigart 的*使用 Python 和 Pygame 制作游戏*是一本烹饪手册，用于在 Pygame 1.9.1 中重新创建几个经典游戏。 可在 [http://inventwithpython.com/pygame/chapters/](http://inventwithpython.com/pygame/chapters/) 上在线获得免费的电子版本，或在 [http://inventwithpython.com/makinggames.pdf](http://inventwithpython.com/makinggames.pdf) 上下载 PDF 文件。 。
+Al Sweigart 的*使用 Python 和 Pygame 制作游戏*是一本烹饪手册，用于在 Pygame 1.9.1 中重新创建几个经典游戏。 可在[这个页面](http://inventwithpython.com/pygame/chapters/)上在线获得免费的电子版本，或在[这个页面](http://inventwithpython.com/makinggames.pdf)上下载 PDF 文件。 。
 
 # 子类管理器。
 
