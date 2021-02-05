@@ -20,7 +20,7 @@
 
 ## 在 Windows 上
 
-Windows 上的两个可执行文件称为`ONopencv_createsamples.exe`和`ONopencv_traincascade.exe`。 它们不是预建的。 而是，仅当您从源代码编译 OpenCV 时，它们才存在。 根据您在第 1 章和*设置 OpenCV* 中选择的编译方法，它们的父文件夹是以下文件夹之一：
+Windows 上的两个可执行文件称为`ONopencv_createsamples.exe`和`ONopencv_traincascade.exe`。 它们不是预建的。 而是，仅当您从源代码编译 OpenCV 时，它们才存在。 根据您在第 1 章和“设置 OpenCV”中选择的编译方法，它们的父文件夹是以下文件夹之一：
 
 *   MinGW：`<unzip_destination>\bin`
 *   Visual Studio 或 Visual C ++ Express：`<unzip_destination>\bin\Release`
@@ -29,7 +29,7 @@ Windows 上的两个可执行文件称为`ONopencv_createsamples.exe`和`ONopenc
 
 ## 在 Mac，Ubuntu 和其他类似 Unix 的系统上
 
-Mac 上的两个可执行文件 Ubuntu 和其他类似 Unix 的系统称为`opencv_createsamples`和`opencv_traincascade`。 它们的父文件夹是以下文件夹之一，具体取决于您的系统和在第 1 章，*设置 OpenCV* 中选择的方法：
+Mac 上的两个可执行文件 Ubuntu 和其他类似 Unix 的系统称为`opencv_createsamples`和`opencv_traincascade`。 它们的父文件夹是以下文件夹之一，具体取决于您的系统和在第 1 章，“设置 OpenCV”中选择的方法：
 
 *   带有 MacPorts 的 Mac：`/opt/local/bin`
 *   带有 Homebrew 的 Mac：`/opt/local/bin`或`/opt/local/sbin`
@@ -37,7 +37,7 @@ Mac 上的两个可执行文件 Ubuntu 和其他类似 Unix 的系统称为`open
 *   使用我的自定义安装脚本的 Ubuntu：`/usr/local/bin`
 *   其他类 Unix 系统：`/usr/bin`和`/usr/local/bin`
 
-除 Mac 带有 Homebrew 的情况外，默认情况下，可执行文件的文件夹应位于`PATH`中。 对于 Homebrew，如果要将相关文件夹添加到`PATH`，请参阅*第二步中的说明，将 Homebrew 与现成的软件包配合使用（不支持深度相机）。[的](01.html "Chapter 1. Setting up OpenCV")*部分 第 1 章，*设置 OpenCV* 。 否则，请注意可执行文件的完整路径，因为我们需要在运行它们时使用它。
+除 Mac 带有 Homebrew 的情况外，默认情况下，可执行文件的文件夹应位于`PATH`中。 对于 Homebrew，如果要将相关文件夹添加到`PATH`，请参阅*第二步中的说明，将 Homebrew 与现成的软件包配合使用（不支持深度相机）。[的](01.html "Chapter 1. Setting up OpenCV")*部分 第 1 章，“设置 OpenCV”。 否则，请注意可执行文件的完整路径，因为我们需要在运行它们时使用它。
 
 # 创建训练集和级联
 
