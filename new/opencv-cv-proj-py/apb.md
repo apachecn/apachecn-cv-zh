@@ -120,7 +120,7 @@ $ <opencv_createsamples> -vec <binary_description> -image <positive_image> -bg <
 
 ```
 
-有关`<opencv_createsamples>`的其他（可选）标志的信息，请参见 [http://docs.opencv.org/doc/user_guide/ug_traincascade.html](http://docs.opencv.org/doc/user_guide/ug_traincascade.html) 上的官方文档。
+有关`<opencv_createsamples>`的其他（可选）标志的信息，请参见[这个页面](http://docs.opencv.org/doc/user_guide/ug_traincascade.html)上的官方文档。
 
 ## 通过运行< opencv_traincascade >创建<级联>
 
@@ -131,7 +131,7 @@ $ <opencv_traincascade> -data <cascade> -vec <binary_description> -bg <negative_
 
 ```
 
-有关`<opencv_traincascade>`的其他（可选）标志的信息，请参见 [http://docs.opencv.org/doc/user_guide/ug_traincascade.html](http://docs.opencv.org/doc/user_guide/ug_traincascade.html) 上的官方文档。
+有关`<opencv_traincascade>`的其他（可选）标志的信息，请参见[这个页面](http://docs.opencv.org/doc/user_guide/ug_traincascade.html)上的官方文档。
 
 ### 提示
 
