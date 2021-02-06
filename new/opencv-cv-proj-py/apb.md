@@ -148,7 +148,7 @@ $ <opencv_traincascade> -data <cascade> -vec <binary_description> -bg <negative_
 *   考虑使分类问题更具体。 例如，`bald, shaven, male face without glasses`级联可能比普通的`face`级联更容易训练。 稍后，随着结果的改善，您可以尝试再次扩大问题范围。
 *   收集更多的训练图像，更多！
 *   确保`<negative_description>`包含*所有*负面训练图像，仅*包含*负面训练图像。
-*   确保`<positive_description>`包含*所有*阳性训练图像，而*仅包含*阳性训练图像。
+*   确保`<positive_description>`包含*所有*正例训练图像，而*仅包含*正例训练图像。
 *   确保`<positive_description>`中指定的子矩形正确。
 *   查看并尝试使用`<opencv_createsamples>`和`<opencv_traincascade>`的可选标志。 这些标志在[这个页面](http://docs.opencv.org/doc/user_guide/ug_traincascade.html)的官方文档中进行了描述。
 
