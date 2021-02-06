@@ -23,7 +23,7 @@
 Windows 上的两个可执行文件称为`ONopencv_createsamples.exe`和`ONopencv_traincascade.exe`。 它们不是预建的。 而是，仅当您从源代码编译 OpenCV 时，它们才存在。 根据您在第 1 章和“设置 OpenCV”中选择的编译方法，它们的父文件夹是以下文件夹之一：
 
 *   MinGW：`<unzip_destination>\bin`
-*   Visual Studio 或 Visual C ++ Express：`<unzip_destination>\bin\Release`
+*   Visual Studio 或 Visual C++ Express：`<unzip_destination>\bin\Release`
 
 如果要将可执行文件的文件夹添加到系统的`Path`变量中，请参考*信息框中的说明，在 Windows XP，Windows Vista，Windows 7 和 Windows 8* 上进行选择 第 1 章和*的部分设置 OpenCV* 。 否则，请注意可执行文件的完整路径，因为我们将需要在运行它们时使用它。
 
