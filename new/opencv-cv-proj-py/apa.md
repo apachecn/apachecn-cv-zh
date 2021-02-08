@@ -8,7 +8,7 @@
 
 # 安装 Pygame
 
-假设我们已经根据第 1 章和“设置 OpenCV”中描述的方法之一设置了 Python。 根据我们现有的设置，我们可以通过以下方式之一安装 Pygame：
+假设我们已经根据第 1 章，“设置 OpenCV”中描述的方法之一设置了 Python。 根据我们现有的设置，我们可以通过以下方式之一安装 Pygame：
 
 *   带有 32 位 Python 的 Windows：从[这个页面](http://pygame.org/ftp/pygame-1.9.1.win32-py2.7.msi)下载并 安装 Pygame 1.9.1。
 *   带有 64 位 Python 的 Windows：从[这个页面](http://www.lfd.uci.edu/~gohlke/pythonlibs/2k2kdosm/pygame-1.9.2pre.win-amd64-py2.7.exe)。

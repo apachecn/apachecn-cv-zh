@@ -20,7 +20,7 @@
 
 ## 在 Windows 上
 
-Windows 上的两个可执行文件称为`ONopencv_createsamples.exe`和`ONopencv_traincascade.exe`。 它们不是预建的。 而是，仅当您从源代码编译 OpenCV 时，它们才存在。 根据您在第 1 章和“设置 OpenCV”中选择的编译方法，它们的父文件夹是以下文件夹之一：
+Windows 上的两个可执行文件称为`ONopencv_createsamples.exe`和`ONopencv_traincascade.exe`。 它们不是预建的。 而是，仅当您从源代码编译 OpenCV 时，它们才存在。 根据您在第 1 章，“设置 OpenCV”中选择的编译方法，它们的父文件夹是以下文件夹之一：
 
 *   MinGW：`<unzip_destination>\bin`
 *   Visual Studio 或 Visual C++ Express：`<unzip_destination>\bin\Release`
