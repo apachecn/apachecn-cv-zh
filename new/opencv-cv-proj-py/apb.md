@@ -137,7 +137,7 @@ $ <opencv_traincascade> -data <cascade> -vec <binary_description> -bg <negative_
 
 **发声**
 
-为求好运，请在运行`<opencv_traincascade>`时发出模仿的声音。 例如，说“ Moo！” 如果正面训练图像是母牛。
+为求好运，请在运行`<opencv_traincascade>`时发出模仿的声音。 例如，说“Moo！” 如果正面训练图像是母牛。
 
 # 测试和改进<级联>
 
