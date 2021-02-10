@@ -8,13 +8,13 @@
 
 > “这是牛。Mo！这是马。邻居！”
 
-级联文件的生成方式类似于抽认卡教学法。 要了解如何识别母牛，计算机需要预先识别为母牛的**正面训练图像**和预先识别为非牛的**负面训练图像**。 作为培训师，我们的第一步是收集这两套图像。
+级联文件的生成方式类似于抽认卡教学法。 要了解如何识别母牛，计算机需要预先识别为母牛的**正面训练图像**和预先识别为非牛的**负面训练图像**。 作为训练器，我们的第一步是收集这两套图像。
 
 在确定要使用多少个正面训练图像时，我们需要考虑用户查看目标的各种方式。 理想，最简单的情况是目标是始终在平坦表面上的 2D 图案。 在这种情况下，一个正面的训练图像可能就足够了。 但是，在其他情况下，可能需要数百甚至数千张训练图像。 假设目标是您所在国家的国旗。 当在文档上打印时，标志的外观可能可预测，但是当在顺风飘扬的织物上打印时，标志的外观变化很大。 诸如人脸之类的自然 3D 目标的外观范围可能更大。 理想情况下，我们的一组正面训练图像应代表我们的相机可能捕获的许多变化。 可选地，我们的任何正面训练图像都可以包含目标的多个实例。
 
 对于我们的负面训练集，我们希望大量图像不包含目标的任何实例，但确实包含相机可能捕获的其他内容。 例如，如果一面旗帜是我们的目标，那么我们的负面训练集可能包括各种天气情况下的天空照片。 （天空不是旗帜，但经常在旗帜后面看到。）不过不要假设太多。 如果相机的环境无法预测，并且在许多设置中都出现了目标，请使用各种各样的负面训练图像。 考虑构建一套通用的环境图像，您可以在多个培训方案中重复使用这些图像。
 
-# 查找训练可执行文件
+# 查找用于训练的可执行文件
 
 为了使级联训练尽可能自动化，OpenCV 提供了两个可执行文件。 它们的名称和位置取决于操作系统和 OpenCV 的特定设置，如以下两节所述。
 
@@ -54,7 +54,7 @@ Mac 上的两个可执行文件 Ubuntu 和其他类似 Unix 的系统称为`open
 
 现在，让我们详细了解三个步骤。
 
-## 创建< negative_description >
+## 创建`<negative_description>`
 
 `<negative_description>`是一个文本文件，列出了所有负面训练图像的相对路径。 路径应以换行符分隔。 例如，假设我们具有以下目录结构，其中`<negative_description>`是`negative/desc.txt`：
 
@@ -91,7 +91,7 @@ $ find img/*.png | sed -e "s/^/\"/g;s/$/\"/g" > desc.txt
 
 ```
 
-## 创建< positive_description >
+## 创建`<positive_description>`
 
 如果我们有多个正面训练图像，则需要`<positive_description>`。 否则，请继续下一节。 `<positive_description>`是一个文本文件，列出了所有积极训练图像的相对路径。 在每个路径之后，`<positive_description>`还包含一系列数字，这些数字指示在图像中找到了多少个目标实例，以及哪些子矩形包含了这些目标实例。 对于每个子矩形，数字按以下顺序排列：x，y，宽度和高度。 考虑以下示例：
 
@@ -104,7 +104,7 @@ $ find img/*.png | sed -e "s/^/\"/g;s/$/\"/g" > desc.txt
 
 要创建这样的文件，我们可以以与`<negative_description>`相同的方式开始生成图像路径列表。 然后，我们必须基于对图像的专家（人类）分析，手动添加有关目标实例的数据。
 
-## 通过运行< opencv_createsamples >创建< binary_description >
+## 通过运行`<opencv_createsamples>`创建`<binary_description>`
 
 假设我们有多个正训练图像，因此，我们创建了`<positive_description>`，我们现在可以通过运行以下命令来生成`<binary_description>`：
 
@@ -122,7 +122,7 @@ $ <opencv_createsamples> -vec <binary_description> -image <positive_image> -bg <
 
 有关`<opencv_createsamples>`的其他（可选）标志的信息，请参见[这个页面](http://docs.opencv.org/doc/user_guide/ug_traincascade.html)上的官方文档。
 
-## 通过运行< opencv_traincascade >创建<级联>
+## 通过运行`<opencv_traincascade>`创建`<cascade>`
 
 最后，我们可以通过运行以下命令生成`<cascade>`：
 
@@ -139,7 +139,7 @@ $ <opencv_traincascade> -data <cascade> -vec <binary_description> -bg <negative_
 
 为求好运，请在运行`<opencv_traincascade>`时发出模仿的声音。 例如，说“Moo！” 如果正面训练图像是母牛。
 
-# 测试和改进<级联>
+# 测试和改进`<cascade>`
 
 `<cascade>`是与 OpenCV 的`CascadeClassifier`类的构造函数兼容的 XML 文件。 对于如何使用`CascadeClassifier`的示例，请参考第 4 章“用 Haar 级联跟踪人脸”的`FaceTracker`实现。通过复制和修改`FaceTracker`和`Cameo`，您应该能够创建一个简单的测试应用程序，该应用程序在自定义目标的跟踪实例周围绘制矩形。
 

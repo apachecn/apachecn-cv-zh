@@ -1,4 +1,4 @@
-# 附录 A.与 Pygame 集成
+# 附录 A.集成 Pygame 
 
 本附录显示了如何在 OpenCV 应用程序中设置 Pygame 库以及如何使用 Pygame 进行窗口管理。 此外，附录还概述了 Pygame 的其他功能以及一些学习 Pygame 的资源。
 
@@ -45,7 +45,7 @@ Pygame 的 API 文档和一些教程可以在[这个页面](http://www.pygame.or
 
 Al Sweigart 的《使用 Python 和 Pygame 制作游戏》是一本烹饪手册，用于在 Pygame 1.9.1 中重新创建几个经典游戏。 可在[这个页面](http://inventwithpython.com/pygame/chapters/)上在线获得免费的电子版本，或在[这个页面](http://inventwithpython.com/makinggames.pdf)上下载 PDF 文件。 。
 
-# 子类管理器。
+# 派生管理器
 
 如第 2 章，“处理相机，文件和 GUI”中所述，我们的面向对象设计使我们可以轻松地将 OpenCV 的 HighGUI 窗口管理器替换为另一个窗口管理器，例如 Pygame 。 为此，我们只需要将`managers.WindowManager`类子类化，并覆盖四种方法：`createWindow()`，`show()`，`destroyWindow()`和`processEvents()`。 另外，我们需要导入一些新的依赖项。
 
