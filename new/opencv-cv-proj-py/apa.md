@@ -132,6 +132,6 @@ from managers import PygameWindowManager as WindowManager, \
 
 例如，Pygame 可能是适合使用计算机视觉的游戏的后端，而 HighGUI 则不是。
 
-# 摘要
+# 总结
 
 到现在为止，我们应该有一个应用程序，该应用程序使用 OpenCV 捕获（并可能操纵）图像，同时使用 Pygame 显示图像和捕获事件。 从这个基本的集成示例开始，您可能想要扩展`PygameWindowManager`以包装其他 Pygame 功能，或者您可能想要创建另一个`WindowManager`子类来包装另一个库。
