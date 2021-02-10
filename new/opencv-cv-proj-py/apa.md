@@ -124,7 +124,7 @@ from managers import PygameWindowManager as WindowManager, \
 我们仅使用了`pygame.display`和`pygame.event`模块的一些基本功能。 Pygame 提供了更多功能，包括：
 
 *   绘制 2D 几何
-*   绘图文字
+*   绘制文字
 *   管理可绘制 AI 实体（精灵）的组
 *   捕获与窗口，键盘，鼠标和操纵杆/游戏手柄相关的各种输入事件
 *   创建自定义事件
