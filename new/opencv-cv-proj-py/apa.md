@@ -1,6 +1,6 @@
 # 附录 A、集成 Pygame 
 
-本附录显示了如何在 OpenCV 应用程序中设置 Pygame 库以及如何使用 Pygame 进行窗口管理。 此外，附录还概述了 Pygame 的其他功能以及一些学习 Pygame 的资源。
+本附录显示了如何在 OpenCV 应用中设置 Pygame 库以及如何使用 Pygame 进行窗口管理。 此外，附录还概述了 Pygame 的其他功能以及一些学习 Pygame 的资源。
 
 ### 注意
 
@@ -96,13 +96,13 @@ class PygameWindowManager(WindowManager):
 
 请注意，我们正在使用两个 Pygame 模块：`pygame.display`和`pygame.event`。
 
-通过调用`pygame.display.init()`创建窗口，并通过调用`pygame.display.quit()`销毁窗口。 重复调用`display.init()`不起作用，因为 Pygame 仅适用于单窗口应用程序。 Pygame 窗口具有`pygame.Surface`类型的绘图表面。 要获得对此`Surface`的引用，我们可以调用`pygame.display.get_surface()`或`pygame.display.set_mode()`。 后一个函数在返回`Surface`实体的属性之前对其进行修改。 `Surface`实体具有`blit()`方法，即，该方法将另一个`Surface`和一个坐标对作为参数，其中后一个`Surface`应该被“涂抹”（绘制）到第一个坐标上。 完成当前帧的窗口`Surface`的更新后，我们应调用`pygame.display.flip()`来显示它。
+通过调用`pygame.display.init()`创建窗口，并通过调用`pygame.display.quit()`销毁窗口。 重复调用`display.init()`不起作用，因为 Pygame 仅适用于单窗口应用。 Pygame 窗口具有`pygame.Surface`类型的绘图表面。 要获得对此`Surface`的引用，我们可以调用`pygame.display.get_surface()`或`pygame.display.set_mode()`。 后一个函数在返回`Surface`实体的属性之前对其进行修改。 `Surface`实体具有`blit()`方法，即，该方法将另一个`Surface`和一个坐标对作为参数，其中后一个`Surface`应该被“涂抹”（绘制）到第一个坐标上。 完成当前帧的窗口`Surface`的更新后，我们应调用`pygame.display.flip()`来显示它。
 
 通过调用`pygame.event.get()`来轮询诸如`keypresses`之类的事件，该事件将返回自上次调用以来发生的所有事件的列表。 每个事件的类型均为`pygame.event.Event`，并具有`type`属性，该属性指示事件的类别，例如，单击的`pygame.KEYDOWN`和单击窗口的**关闭**按钮的`pygame.QUIT` 。 根据`type`的值，`Event`实体可能具有其他属性，例如`KEYDOWN` 事件的`key`（ASCII 密钥代码）。
 
 相对于使用 HighGUI 的基础`WindowManager`，`PygameWindowManager`通过在每帧 OpenCV 的图像格式和 Pygame 的`Surface`格式之间进行转换会产生一些间接费用。 但是，`PygameWindowManager`提供正常的窗口关闭行为，而基本的`WindowManager`不提供。
 
-# 修改应用程序
+# 修改应用
 
 让我们将`cameo.py`文件修改为使用`PygameWindowManager`而不是`WindowManager`。 在`cameo.py`中找到以下行：
 
@@ -134,4 +134,4 @@ from managers import PygameWindowManager as WindowManager, \
 
 # 总结
 
-到现在为止，我们应该有一个应用程序，该应用程序使用 OpenCV 捕获（并可能操纵）图像，同时使用 Pygame 显示图像和捕获事件。 从这个基本的集成示例开始，您可能想要扩展`PygameWindowManager`以包装其他 Pygame 功能，或者您可能想要创建另一个`WindowManager`子类来包装另一个库。
+到现在为止，我们应该有一个应用，该应用使用 OpenCV 捕获（并可能操纵）图像，同时使用 Pygame 显示图像和捕获事件。 从这个基本的集成示例开始，您可能想要扩展`PygameWindowManager`以包装其他 Pygame 功能，或者您可能想要创建另一个`WindowManager`子类来包装另一个库。
