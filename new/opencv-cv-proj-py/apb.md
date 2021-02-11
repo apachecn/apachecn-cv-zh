@@ -37,7 +37,7 @@ Mac 上的两个可执行文件 Ubuntu 和其他类似 Unix 的系统称为`open
 *   使用我的自定义安装脚本的 Ubuntu：`/usr/local/bin`
 *   其他类 Unix 系统：`/usr/bin`和`/usr/local/bin`
 
-除 Mac 带有 Homebrew 的情况外，默认情况下，可执行文件的文件夹应位于`PATH`中。 对于 Homebrew，如果要将相关文件夹添加到`PATH`，请参阅第 1 章，“设置 OpenCV”的“将 Homebrew 与现成的软件包配合使用（不支持深度相机）”部分的第二步中的说明。 否则，请注意可执行文件的完整路径，因为我们需要在运行它们时使用它。
+除 Mac 带有 Homebrew 的情况外，默认情况下，可执行文件的文件夹应位于`PATH`中。 对于 Homebrew，如果要将相关文件夹添加到`PATH`，请参阅第 1 章，“设置 OpenCV”的“将 Homebrew 与现成的包配合使用（不支持深度相机）”部分的第二步中的说明。 否则，请注意可执行文件的完整路径，因为我们需要在运行它们时使用它。
 
 # 创建训练集和级联
 
@@ -141,7 +141,7 @@ $ <opencv_traincascade> -data <cascade> -vec <binary_description> -bg <negative_
 
 # 测试和改进`<cascade>`
 
-`<cascade>`是与 OpenCV 的`CascadeClassifier`类的构造函数兼容的 XML 文件。 对于如何使用`CascadeClassifier`的示例，请参考第 4 章“用 Haar 级联跟踪人脸”的`FaceTracker`实现。通过复制和修改`FaceTracker`和`Cameo`，您应该能够创建一个简单的测试应用，该应用在自定义目标的跟踪实例周围绘制矩形。
+`<cascade>`是与 OpenCV 的`CascadeClassifier`类的构造器兼容的 XML 文件。 对于如何使用`CascadeClassifier`的示例，请参考第 4 章“用 Haar 级联跟踪人脸”的`FaceTracker`实现。通过复制和修改`FaceTracker`和`Cameo`，您应该能够创建一个简单的测试应用，该应用在自定义目标的跟踪实例周围绘制矩形。
 
 也许在您第一次尝试级联训练时，您将不会获得可靠的跟踪结果。 要提高培训效果，请执行以下操作：
 
