@@ -1,4 +1,4 @@
-# 附录 A、集成 Pygame 
+# 附录 A：集成 Pygame 
 
 本附录显示了如何在 OpenCV 应用中设置 Pygame 库以及如何使用 Pygame 进行窗口管理。 此外，附录还概述了 Pygame 的其他功能以及一些学习 Pygame 的资源。
 
