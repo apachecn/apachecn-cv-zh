@@ -15,6 +15,12 @@
 +   [Python OpenCV3 计算机视觉秘籍](docs/opencv3-cv-py-cb/SUMMARY.md)
 +   [Python OpenCV 3.x 示例](docs/opencv-3x-py-example/SUMMARY.md)
 +   [Qt5 和 OpenCV4 计算机视觉项目](docs/qt5-opencv4-cv-proj/SUMMARY.md)
++   [OpenCV 图像处理学习手册](docs/learn-imgproc-opencv/SUMMARY.md)
++   [Python3 OpenCV4 计算机视觉学习手册](docs/learn-opencv4-cv-py3/SUMMARY.md)
++   [使用计算机视觉实战项目精通 OpenCV](docs/master-opencv-prac-cv-proj/SUMMARY.md)
++   [OpenCV 安卓编程示例](docs/opencv-android-prog-example/SUMMARY.md)
++   [Python OpenCV 计算机视觉项目](docs/opencv-cv-proj-py/SUMMARY.md)
++   [树莓派计算机视觉编程](docs/raspi-cv-prog/SUMMARY.md)
 
 ## 贡献指南
 
