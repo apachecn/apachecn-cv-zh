@@ -21,6 +21,12 @@
 +   [OpenCV 安卓编程示例](docs/opencv-android-prog-example/SUMMARY.md)
 +   [Python OpenCV 计算机视觉项目](docs/opencv-cv-proj-py/SUMMARY.md)
 +   [树莓派计算机视觉编程](docs/raspi-cv-prog/SUMMARY.md)
++   [OpenCV3 安卓应用编程](docs/android-app-prog-opencv3/SUMMARY.md)
++   [OpenCV 即时入门](docs/ins-opencv-starter/SUMMARY.md)
++   [OpenCV 即时入门](docs/learn-robot-py/SUMMARY.md)
++   [OpenCV2 计算机视觉应用编程秘籍](docs/opencv2-cv-app-prog-cb/SUMMARY.md)
++   [Python OpenCV 计算机视觉](docs/opencv-cv-py/SUMMARY.md)
++   [Python OpenCV 蓝图](docs/opencv-py-bp/SUMMARY.md)
 
 ## 贡献指南
 
