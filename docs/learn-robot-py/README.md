@@ -1,4 +1,4 @@
-# OpenCV 即时入门
+# Python 机器人学习手册
 
 > 原文：[ILearning Robotics using Python](https://www.bookzz.ren/bookzz/3695206/eed657)
 > 

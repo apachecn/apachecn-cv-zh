@@ -163,7 +163,7 @@
 	+   [六、通过 JNI 混合 Java 和 C++](docs/android-app-prog-opencv3/6.md)
 +   [OpenCV 即时入门](docs/ins-opencv-starter/README.md)
 	+   [一、OpenCV 即时入门](docs/ins-opencv-starter/1.md)
-+   [OpenCV 即时入门](docs/learn-robot-py/README.md)
++   [Python 机器人学习手册](docs/learn-robot-py/README.md)
 	+   [零、前言](docs/learn-robot-py/00.md)
 	+   [一、机器人操作系统入门](docs/learn-robot-py/01.md)
 	+   [二、了解差动机器人的基础](docs/learn-robot-py/02.md)
