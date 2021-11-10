@@ -27,6 +27,7 @@
 +   [OpenCV2 计算机视觉应用编程秘籍](docs/opencv2-cv-app-prog-cb/SUMMARY.md)
 +   [Python OpenCV 计算机视觉](docs/opencv-cv-py/SUMMARY.md)
 +   [Python OpenCV 蓝图](docs/opencv-py-bp/SUMMARY.md)
++   [Python 图像处理实用指南](docs/handson-imgproc-py/SUMMARY.md)
 
 ## 贡献指南
 
