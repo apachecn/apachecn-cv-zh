@@ -1,0 +1,86 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Site unavailable</title>
+<meta charset='UTF-8'>
+<meta name='description' content='Error page for Safari'/>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans Pro:200italic,200,300italic,300,400italic,400,600italic,600,700italic,700,900italic,900' rel='stylesheet' type='text/css'>
+<link href='https://storage.googleapis.com/safari-fastly-objects/css/error.css' rel='stylesheet' type='text/css'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39299553-7', 'auto');
+  ga('send', 'pageview');
+  ga('send', 'event', 'Error', 'Varnish', '503', {'nonInteraction': 1});
+</script>
+<style>
+  body {
+    margin: 0;
+  }
+  header {
+    background-color: #b9002d;
+    padding:7px 0 6px 10px;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  header svg {
+    fill: #fff;
+    display: block;
+    width: 73px;
+    height: 13px;
+  }
+  h1 {
+    font-size: 3em;
+    max-width: 800px;
+    line-height: 1em;
+    margin-bottom: 20px;
+  }
+  h2 {
+    font-size: 2em;
+    max-width: 800px;
+    margin-bottom: 40px;
+  }
+ @media (max-width: 600px) {
+   h1 {
+      font-size: 2em;
+       max-width: 75%;
+    }
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+  h1,
+  h2 {
+    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+    font-weight: 200;
+    color: #695545;
+    padding: 0 20px 0;
+  }
+  a, a:link, a:active, a:hover, a:visited {
+    color: #4a3c31;
+  }
+</style>
+</head>
+<body>
+<header>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 10" width="78" height="13"><desc>O'Reilly logo</desc><polygon points="28.09 1.96 28.09 0.42 21.68 0.42 21.68 9.64 28.09 9.64 28.09 8.11 23.22 8.11 23.22 5.8 27.86 5.8 27.86 4.27 23.22 4.27 23.22 1.96 28.09 1.96"></polygon><polygon points="32.85 9.64 32.85 0.42 34.39 0.42 34.39 8.11 38.82 8.11 38.82 9.64 32.85 9.64"></polygon><polygon points="40.07 9.64 40.07 0.42 41.61 0.42 41.61 8.11 46.04 8.11 46.04 9.64 40.07 9.64"></polygon><rect x="29.71" y="0.42" width="1.54" height="9.22"></rect><path d="M1.59,6.28a4.8,4.8,0,1,1,4.8,4.8,4.8,4.8,0,0,1-4.8-4.8M4.09,4A3.27,3.27,0,1,0,6.4,3,3.27,3.27,0,0,0,4.09,4" transform="translate(-1.59 -1.2)"></path><path d="M19.82,6.89A2.69,2.69,0,0,0,19,1.62H14.41v9.22h1.54V7h2.14l2.32,3.84H22.2ZM15.95,5.47V3.16H19a1.15,1.15,0,0,1,0,2.31h-3.1Z" transform="translate(-1.59 -1.2)"></path><path d="M13.32,2.61a1.13,1.13,0,1,1-1.13-1.13,1.13,1.13,0,0,1,1.13,1.13" transform="translate(-1.59 -1.2)"></path><polygon points="52.9 0.42 51.03 0.42 48.66 3.85 46.3 0.42 44.43 0.42 47.89 5.44 47.89 9.64 49.43 9.64 49.43 5.44 52.9 0.42"></polygon><path d="M58.31,1.2a2.41,2.41,0,1,0,2.41,2.42A2.42,2.42,0,0,0,58.31,1.2m0,4.44a2,2,0,1,1,2-2,2,2,0,0,1-2,2" transform="translate(-1.59 -1.2)"></path><path d="M59.4,3.09a0.72,0.72,0,0,0-.72-0.72H57.32V4.83h0.41v-1h0.69l0.49,1h0.46l-0.51-1a0.71,0.71,0,0,0,.54-0.69m-1.67-.31h0.95a0.31,0.31,0,0,1,.31.31,0.31,0.31,0,0,1-.31.3H57.73V2.78Z" transform="translate(-1.59 -1.2)"></path></svg>
+</header>
+<section>
+
+  <h1>Houston, we have a problem.</h1>
+
+  <h2>Sorry for the inconvenience. Please try again. For additional help, please contact our customer service team at <a href="tel:+1-800-889-8969" aria-label="1. 8 0 0. 8 8 9. 8 9 6 9." style="white-space:nowrap;">1-800-889-8969</a>, <a href="tel:+1-707-827-7019" aria-label="7 0 7. 8 2 7. 7 0 1 9." style="white-space:nowrap;">707-827-7019</a>, or <a href="mailto:support@oreilly.com">support@oreilly.com</a></h2>
+
+  <img src='https://storage.googleapis.com/safari-fastly-objects/img/cog.png' />
+  </section>
+</body>
+</html>
