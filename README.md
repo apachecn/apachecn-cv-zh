@@ -28,6 +28,7 @@
 +   [Python OpenCV 计算机视觉](docs/opencv-cv-py/SUMMARY.md)
 +   [Python OpenCV 蓝图](docs/opencv-py-bp/SUMMARY.md)
 +   [Python 图像处理实用指南](docs/handson-imgproc-py/SUMMARY.md)
++   [使用 OpenCV4 和 C++ 构建计算机视觉项目](docs/build-cv-proj-opencv4-cpp/SUMMARY.md)
 
 ## 贡献指南
 
