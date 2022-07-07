@@ -3,6 +3,8 @@
 > 原文：[OpenCV : computer vision projects with Python](https://1lib.org/book/5417061/c7e969)
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+>
+> 阶段：简单校对（2）
 > 
 > 自豪地采用[谷歌翻译](https://translate.google.cn/)
 > 
