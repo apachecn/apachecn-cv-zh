@@ -3,6 +3,8 @@
 > 原文：[Qt 5 and OpenCV 4 Computer Vision Projects](https://1lib.org/book/5220725/d23493)
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+>
+> 阶段：简单校对（2）
 > 
 > 自豪地采用[谷歌翻译](https://translate.google.cn/)
 > 
