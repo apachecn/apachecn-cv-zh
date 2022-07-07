@@ -3,6 +3,8 @@
 > 原文：[Android Application Programming with OpenCV 3](https://www.bookzz.ren/bookzz/2738171/0f73cd)
 > 
 > 协议：[CC BY-NC-SA 4.0](http://creativecommons.org/licenses/by-nc-sa/4.0/)
+>
+> 阶段：简单校对（2）
 > 
 > 自豪地采用[谷歌翻译](https://translate.google.cn/)
 > 
